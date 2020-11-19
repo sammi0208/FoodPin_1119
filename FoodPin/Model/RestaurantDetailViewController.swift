@@ -11,13 +11,13 @@ import UIKit
 class RestaurantDetailViewController: UIViewController {
     
     @IBOutlet var restaurantImageView: UIImageView!
-    var restaurantImageName = ""
+    var restaurants = Restaurant()
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        restaurantImageView.image = UIImage(named: restaurantImageName)
+        restaurantImageView.image = UIImage(named: restaurants.image)
     }
     
 
